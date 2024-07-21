@@ -16,10 +16,10 @@ To set up the project on your local machine for development and testing purposes
    ```
 
 2. **Run the Backend Service:**
-   The backend is built using C#. Open the backend project in your preferred C# IDE (e.g., Visual Studio) and run the project to start the local server.
+   The backend is built using C# and .NET Minimal API. Open the backend project in your preferred C# IDE (e.g., Visual Studio), and run the project to start the local server.
 
 3. **Start the Frontend:**
-   Open the `index.html` file in your web browser to launch the frontend interface.
+   Use VSCode or an HTTP server to simulate the frontend. Open the `index.html` file in your web browser to launch the frontend interface. Ensure you are serving the frontend files through a local server (e.g., Live Server extension in VSCode) to avoid CORS issues.
 
 ## Usage
 
@@ -27,17 +27,23 @@ To use the Premium Calculator, follow these steps:
 
 1. **Enter Details:**
    - Date of Birth: Select your date of birth.
-   - State: Choose your state from the dropdown.
+   - State: Choose your state from the dropdown. The dropdown includes all 50 states of the USA.
    - Age: The age will be auto-populated based on the date of birth.
    - Plan: Select the desired plan from the dropdown.
 
 2. **Calculate Premium:**
    - Click the "Get Premium" button to calculate the premium.
-   - The results will be displayed, showing the carrier, premium, annual, and monthly amounts.
+   - The results will be displayed, showing the carrier, premium, annual, and monthly amounts. There is also a period field to select the payment frequency.
+
+     Example:
+     If the URL/webservice returns 300.0 and the selected frequency is quarterly, that means that 300.0 will be paid every 3 months.
+     Expected results:
+     - Monthly = 100.0 (300.0 / 3)
+     - Annually = 1200.0 (300.0 * 4)
 
 3. **Edit Plans:**
    - Click the "Edit Plans" button to view and edit existing plans.
-   - You can add new plans, edit existing ones, and save changes.
+   - You can add new plans, edit existing ones, and save changes. To save all the rows, you need to click the 'Save' button for each row individually, and then click the 'Save Changes' button to save all the changes to the backend.
 
 ## API Documentation
 
@@ -45,21 +51,21 @@ The application interacts with the backend service through various API endpoints
 
 ### Get Plans
 
-- **Endpoint:** `/GetPlans`
+- **Endpoint:** `http://localhost:7014/GetPlans`
 - **Method:** `GET`
 - **Description:** Fetches all available plans.
 - **Response:** JSON array of plan objects.
 
 Example:
 ```javascript
-fetch('https://localhost:7014/GetPlans')
+fetch('http://localhost:7014/GetPlans')
     .then(response => response.json())
     .then(data => console.log(data));
 ```
 
 ### Get Premium
 
-- **Endpoint:** `/GetPremium`
+- **Endpoint:** `http://localhost:7014/GetPremium`
 - **Method:** `POST`
 - **Description:** Calculates the premium based on the provided input data.
 - **Request Body:** JSON object with `dateOfBirth`, `state`, `age`, and `plan`.
@@ -67,7 +73,7 @@ fetch('https://localhost:7014/GetPlans')
 
 Example:
 ```javascript
-fetch('https://localhost:7014/GetPremium', {
+fetch('http://localhost:7014/GetPremium', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -85,7 +91,7 @@ fetch('https://localhost:7014/GetPremium', {
 
 ### Update Plans
 
-- **Endpoint:** `/UpdatePlans`
+- **Endpoint:** `http://localhost:7014/UpdatePlans`
 - **Method:** `POST`
 - **Description:** Updates the plans with new data.
 - **Request Body:** JSON array of plan objects.
@@ -93,7 +99,7 @@ fetch('https://localhost:7014/GetPremium', {
 
 Example:
 ```javascript
-fetch('https://localhost:7014/UpdatePlans', {
+fetch('http://localhost:7014/UpdatePlans', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
