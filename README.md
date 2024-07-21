@@ -11,8 +11,8 @@ To set up the project on your local machine for development and testing purposes
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone [<repository-url>](https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git)
+   cd [<repository-directory>](https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git)
    ```
 
 2. **Run the Backend Service:**
