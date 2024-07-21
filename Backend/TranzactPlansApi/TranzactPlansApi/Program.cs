@@ -108,4 +108,4 @@ app.MapPost("/UpdatePlans", async ([FromBody] List<Plans> updatedPlans) =>
     }
 });
 
-app.Run("https://localhost:7014");
+app.Run("http://localhost:7014");

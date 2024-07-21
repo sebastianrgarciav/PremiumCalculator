@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://localhost:7014';
+const API_BASE_URL = 'http://localhost:7014';
 
 const getPlans = async () => {
     try {
