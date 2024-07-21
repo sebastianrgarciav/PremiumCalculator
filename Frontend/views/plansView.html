@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans View</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="../assets/tranzact_logo.png" alt="Tranzact Logo">
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1 id="plansTitle" class="text-center">List of plans [0]</h1>
+            <div class="button-row">
+                <button id="addRowButton">+ Add Row</button>
+                <button id="saveChangesButton"><i class="fas fa-save"></i> Save Changes</button>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Carrier</th>
+                        <th>Plan</th>
+                        <th>State</th>
+                        <th>Month of Birth</th>
+                        <th>Min Age</th>
+                        <th>Max Age</th>
+                        <th>Premium</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="plansTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../services/planService.js"></script>
+    <script src="../controllers/plansViewController.js"></script>
+</body>
+</html>

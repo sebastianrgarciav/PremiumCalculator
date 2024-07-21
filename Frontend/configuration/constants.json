@@ -1,0 +1,41 @@
+{
+    "SUCCESS": {
+        "PLANS_UPDATED": "Plans updated successfully!",
+        "FETCH_SUCCESS": "Data fetched successfully!"
+    },
+    "ERROR": {
+        "FETCH_CONFIG": "Error loading configuration.",
+        "POPULATE_SELECT": "Error populating select elements.",
+        "FORM_SUBMISSION": "Error in form submission.",
+        "EVENT_LISTENER": "Error adding event listeners.",
+        "FETCH_PREMIUM": "Error fetching premium data.",
+        "POPULATE_TABLE": "Error populating results table.",
+        "UPDATE_TABLE": "Error updating table.",
+        "FETCH_PLANS_CONFIG": "Error fetching data.",
+        "POPULATE_PLANS_TABLE": "Error populating plans table.",
+        "UPDATE_PLANS_TITLE": "Error updating plans title.",
+        "CREATE_EDITABLE_CELL": "Error creating editable cell.",
+        "CREATE_INPUT": "Error creating input.",
+        "CREATE_PLAN_INPUT": "Error creating plan input.",
+        "CREATE_STATE_SELECT": "Error creating state select.",
+        "CREATE_MONTH_SELECT": "Error creating month select.",
+        "MAKE_ROW_EDITABLE": "Error making row editable.",
+        "SAVE_ROW": "Error saving row.",
+        "SAVE_CHANGES": "Error updating plans.",
+        "ADD_ROW": "Error adding row.",
+        "DELETE_ROW": "Error deleting row.",
+        "VALIDATE_NUMBER_INPUT": "Error validating number input.",
+        "REMOVE_ERROR_STYLES": "Error removing error styles."
+    },
+    "VALIDATION": {
+        "CARRIER_EMPTY": "Carrier cannot be empty.",
+        "PLAN_EMPTY": "Plan cannot be empty.",
+        "STATE_EMPTY": "State cannot be empty.",
+        "MONTH_EMPTY": "Month of Birth cannot be empty.",
+        "MIN_AGE_INVALID": "Min Age cannot be greater than or equal to Max Age.",
+        "PREMIUM_INVALID": "Premium must be greater than 0 and can have up to two decimal places."
+    },
+    "GENERAL": {
+        "FIX_ERRORS": "Please fix the highlighted fields:"
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Calculator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="assets/tranzact_logo.png" alt="Tranzact Logo">
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1 class="text-center">Premium Calculator</h1>
+            <button class="view-plans-button"><i class="fas fa-pencil-alt"></i> Edit Plans</button>
+        </div>
+        <form id="premiumForm" class="mt-4">
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth <span>*</span></label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" required>
+                <small id="dobError" class="form-text text-danger" style="display:none;color: red;">Date of Birth cannot be in the
+                    future.</small>
+            </div>
+            <div class="form-group">
+                <label for="state">State <span>*</span></label>
+                <select id="state" name="state" class="form-control" required></select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age <span>*</span></label>
+                <input type="number" id="age" name="age" class="form-control" required readonly>
+            </div>
+            <div class="form-group">
+                <label for="plan">Plan <span>*</span></label>
+                <select id="plan" name="plan" class="form-control" required></select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" disabled>Get Premium</button>
+        </form>
+        <div id="resultsContainer" class="mt-4" style="display:none;">
+            <div class="form-group">
+                <label for="period">Period</label>
+                <select id="period" name="period" class="form-control"></select>
+            </div>
+            <h3>Premium Results</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Carrier</th>
+                        <th>Premium</th>
+                        <th>Annual</th>
+                        <th>Monthly</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="controllers/mainController.js"></script>
+    <script src="services/planService.js"></script>
+</body>
+
+</html>
