@@ -11,20 +11,14 @@ To set up the project on your local machine for development and testing purposes
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git
+   cd https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git
    ```
 
-2. **Install Dependencies:**
-   Ensure you have Node.js installed. Navigate to the project directory and run:
-   ```bash
-   npm install
-   ```
-
-3. **Run the Backend Service:**
+2. **Run the Backend Service:**
    The backend is built using C#. Open the backend project in your preferred C# IDE (e.g., Visual Studio) and run the project to start the local server.
 
-4. **Start the Frontend:**
+3. **Start the Frontend:**
    Open the `index.html` file in your web browser to launch the frontend interface.
 
 ## Usage
