@@ -114,17 +114,17 @@ fetch('http://localhost:7014/UpdatePlans', {
 
 The application is deployed using free hosting services for both the backend and the frontend.
 
-#### Backend Deployment
-
-- **URL:** `http://www.tranzactplansapi.somee.com/`
-- **Hosting Service:** Somee.com
-  - **Description:** Somee.com offers free ASP.NET hosting, which is ideal for deploying .NET applications. The service provides support for SQL databases, a custom domain, and a user-friendly control panel to manage the deployment. It's a good choice for small to medium-sized projects looking for a cost-effective solution for hosting their backend services.
-
 #### Frontend Deployment
 
 - **URL:** `https://tranzact-calculator-premium.netlify.app/`
 - **Hosting Service:** Netlify
   - **Description:** Netlify is a popular platform for deploying static websites and frontend applications. It offers a free tier with features such as continuous deployment from a Git repository, custom domains, HTTPS, and a global CDN. Netlify is known for its ease of use, allowing developers to quickly deploy and manage their frontend applications with minimal configuration. It's an excellent choice for React, Vue, Angular, and static site deployments.
+
+#### Backend Deployment
+
+- **URL:** `http://www.tranzactplansapi.somee.com/`
+- **Hosting Service:** Somee.com
+  - **Description:** Somee.com offers free ASP.NET hosting, which is ideal for deploying .NET applications. The service provides support for SQL databases, a custom domain, and a user-friendly control panel to manage the deployment. It's a good choice for small to medium-sized projects looking for a cost-effective solution for hosting their backend services.
 
 ### Deployment Steps
 
@@ -141,8 +141,6 @@ The application is deployed using free hosting services for both the backend and
 
 By using these free hosting services, you can effectively deploy and manage your full-stack application without incurring hosting costs. This setup is ideal for development, testing, and small-scale production environments.
 
-```
-```
 ### Unit Testing
 
 Ensure you have unit tests written for the backend API methods. You can use a testing framework like xUnit for C#.
