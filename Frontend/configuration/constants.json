@@ -37,5 +37,8 @@
     },
     "GENERAL": {
         "FIX_ERRORS": "Please fix the highlighted fields:"
+    },
+    "DATE":{
+        "MAX_AGE_PER_PERSON":120
     }
 }

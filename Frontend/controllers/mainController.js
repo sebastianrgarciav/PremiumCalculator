@@ -69,7 +69,7 @@ const updateAgeAndValidate = () => {
         const today = new Date();
         const dobError = document.getElementById('dobError');
 
-        if (dob > today) {
+        if (dob > today || dob.getFullYear() < today.getFullYear() - CONSTANTS.DATE.MAX_AGE_PER_PERSON) {
             dobError.style.display = 'block';
             document.getElementById('age').value = '';
             validateForm();
