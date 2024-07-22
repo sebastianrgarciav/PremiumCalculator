@@ -295,6 +295,7 @@ Use JavaScript testing frameworks like Jest or Mocha for testing frontend functi
    - Disable controls if value has not been retrieved. [✅]
    - Validate only numeric entries on fields. [✅]
    - Handle all exceptions when calculating values. [✅]
+   - Deploy the complete application. [✅]
 
 2. **General:**
    - Include unit testing. [✅]
