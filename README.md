@@ -11,8 +11,8 @@ To set up the project on your local machine for development and testing purposes
 
 1. **Clone the Repository:**
    ```bash
-   git clone `https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git`
-   cd `https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git`
+   git clone https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git
+   cd https://github.com/sebstianrodrigo/PremiumCalculatorTranzact.git
    ```
 
 2. **Run the Backend Service:**
@@ -26,7 +26,7 @@ To set up the project on your local machine for development and testing purposes
 To use the Premium Calculator, follow these steps:
 
 1. **Enter Details:**
-   - Date of Birth: Select your date of birth.
+   - Date of Birth: Select your date of birth. (The year cannot be in the future, and the person cannot be older than 120 years.)
    - State: Choose your state from the dropdown. The dropdown includes all 50 states of the USA.
    - Age: The age will be auto-populated based on the date of birth.
    - Plan: Select the desired plan from the dropdown.
@@ -263,6 +263,43 @@ Use JavaScript testing frameworks like Jest or Mocha for testing frontend functi
 - Ensure that all form fields are validated correctly.
 - Test the functionality of adding, editing, and saving plans.
 
+## Requirements Checklist
+
+### Backend Development
+- Use any backend language (desired: C#). [✅]
+- Avoid using MVC template; a simple project with a well-defined API is sufficient. [✅]
+- Must receive parameters: Date of Birth, State, Age, and Plan. [✅]
+- Provide a premium based on a given table, supporting a substantial number of conditions. [✅]
+- Data should not be hardcoded and should be easily changeable by the end user. [✅]
+- Validate that Age and Date of Birth match. [✅]
+- API result should be in JSON format. [✅]
+
+### Frontend Development
+- Use vanilla JavaScript and jQuery (no other external libraries/frameworks). [✅]
+- Build a web page that consumes the created web service. [✅]
+- Display the result in a textbox, alongside a dropdown for frequencies (Monthly, Quarterly, Semi-Annually, Annually). [✅]
+- Calculate and display values for Annual and Monthly based on the dropdown selection. [✅]
+- Age control should be auto-populated based on Date of Birth. [✅]
+
+### Documentation
+- Include a README file with: [✅]
+  - Overview of the project. [✅]
+  - Setup instructions. [✅]
+  - Usage guide. [✅]
+  - API documentation. [✅]
+
+### Plus Points
+1. **JavaScript:**
+   - Use ES6 features. [✅]
+   - Validate fields before calculation. [✅]
+   - Disable controls if value has not been retrieved. [✅]
+   - Validate only numeric entries on fields. [✅]
+   - Handle all exceptions when calculating values. [✅]
+
+2. **General:**
+   - Include unit testing. [✅]
+
+
 ## Files Description
 
 ### index.html
@@ -291,3 +328,4 @@ Contains constant values used throughout the application.
 
 ### Program.cs
 C# file for the backend service.
+
