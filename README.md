@@ -27,7 +27,7 @@ To use the Premium Calculator, follow these steps:
 
 1. **Enter Details:**
    - Date of Birth: Select your date of birth. (The year cannot be in the future, and the person cannot be older than 120 years.)
-   - State: Choose your state from the dropdown. The dropdown includes all 50 states of the USA.
+   - State: Choose your state from the dropdown. The dropdown includes all 50 states of the USA. You can type the first letter to search for a state.
    - Age: The age will be auto-populated based on the date of birth.
    - Plan: Select the desired plan from the dropdown.
 
@@ -295,7 +295,6 @@ Use JavaScript testing frameworks like Jest or Mocha for testing frontend functi
    - Disable controls if value has not been retrieved. [✅]
    - Validate only numeric entries on fields. [✅]
    - Handle all exceptions when calculating values. [✅]
-   - Deploy the complete application. [✅]
 
 2. **General:**
    - Include unit testing. [✅]
