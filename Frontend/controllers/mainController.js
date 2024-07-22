@@ -1,5 +1,8 @@
 let CONSTANTS = {};
 document.addEventListener('DOMContentLoaded', async () => {
+    const stateField = document.getElementById('state');
+    const planField = document.getElementById('plan');
+
     try {
         const response = await fetch('configuration/constants.json');
         CONSTANTS = await response.json();
@@ -12,6 +15,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     populateSelect('state', data.states);
                     populateSelect('plan', data.plans);
                     populateSelect('period', data.periodOptions);
+
+                    stateField.disabled = false;
+                    planField.disabled = false;
                 } catch (error) {
                     console.error(CONSTANTS.ERROR.POPULATE_SELECT, error);
                 }
@@ -40,6 +46,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.error(CONSTANTS.ERROR.EVENT_LISTENER, error);
         }
     } catch (error) {
+        stateField.disabled = true;
+        planField.disabled = true;
         console.error('Error loading constants:', error);
     }
 });
