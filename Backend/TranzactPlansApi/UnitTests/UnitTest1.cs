@@ -18,7 +18,7 @@ namespace TranzactPlansApi.Tests
             // Simulate the loading of plans from a JSON file
             var plansJson = @"[{
                 ""State"": ""CA"",
-                ""Plan"": ""C"",
+                ""Plan"": ""A"",
                 ""AgeRange"": [30, 40],
                 ""MonthOfBirth"": ""January"",
                 ""Carrier"": ""Carrier1"",
@@ -33,15 +33,14 @@ namespace TranzactPlansApi.Tests
             // Arrange
             var builder = WebApplication.CreateBuilder();
             var app = builder.Build();
-            var result = new PlansController(_plans);
+            var controller = new PlansController(_plans);
 
             // Act
-            var response = result.GetPlans();
+            var response = controller.GetPlans();
 
             // Assert
-            Assert.IsType<OkObjectResult>(response);
-            var okResult = response as OkObjectResult;
-            var plans = okResult.Value as List<Plans>;
+            var okResult = Assert.IsType<OkObjectResult>(response);
+            var plans = Assert.IsAssignableFrom<List<Plans>>(okResult.Value);
             Assert.NotNull(plans);
             Assert.Single(plans);
         }
@@ -63,7 +62,8 @@ namespace TranzactPlansApi.Tests
             var response = controller.GetPremium(request);
 
             // Assert
-            Assert.IsType<BadRequestObjectResult>(response);
+            var badRequestResult = Assert.IsType<BadRequestObjectResult>(response);
+            Assert.Equal("Invalid request", badRequestResult.Value);
         }
 
         [Fact]
@@ -83,9 +83,8 @@ namespace TranzactPlansApi.Tests
             var response = controller.GetPremium(request);
 
             // Assert
-            Assert.IsType<OkObjectResult>(response);
-            var okResult = response as OkObjectResult;
-            var matchingPlans = okResult.Value as List<Plans>;
+            var okResult = Assert.IsType<OkObjectResult>(response);
+            var matchingPlans = Assert.IsAssignableFrom<List<PremiumResponse>>(okResult.Value);
             Assert.NotNull(matchingPlans);
             Assert.Single(matchingPlans);
         }
@@ -107,9 +106,8 @@ namespace TranzactPlansApi.Tests
             var response = controller.GetPremium(request);
 
             // Assert
-            Assert.IsType<OkObjectResult>(response);
-            var okResult = response as OkObjectResult;
-            var result = okResult.Value as string;
+            var okResult = Assert.IsType<OkObjectResult>(response);
+            var result = Assert.IsAssignableFrom<string>(okResult.Value);
             Assert.Equal("No matching plans found", result);
         }
     }
@@ -155,6 +153,7 @@ namespace TranzactPlansApi.Tests
                         p.AgeRange[0] <= request.Age &&
                         p.AgeRange[1] >= request.Age &&
                         (p.MonthOfBirth.ToLower() == month.ToLower() || p.MonthOfBirth == "*"))
+                    .Select(p => new PremiumResponse { Carrier = p.Carrier, Premium = p.Premium })
                     .ToList();
 
                 if (!matchingPlans.Any())
