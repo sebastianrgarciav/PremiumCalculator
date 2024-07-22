@@ -116,7 +116,7 @@ The application is deployed using free hosting services for both the backend and
 
 #### Frontend Deployment
 
-- **URL:** `https://tranzact-calculator-premium.netlify.app/`
+- **URL:** `https://tranzactapp-calculator-premium.netlify.app/`
 - **Hosting Service:** Netlify
   - **Description:** Netlify is a popular platform for deploying static websites and frontend applications. It offers a free tier with features such as continuous deployment from a Git repository, custom domains, HTTPS, and a global CDN. Netlify is known for its ease of use, allowing developers to quickly deploy and manage their frontend applications with minimal configuration. It's an excellent choice for React, Vue, Angular, and static site deployments.
 
