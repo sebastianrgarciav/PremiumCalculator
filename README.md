@@ -18,7 +18,7 @@ To set up the project on your local machine for development and testing purposes
    ```
 
 2. **Run the Backend Service:**
-   The backend is built using C# and .NET 6 Minimal API. Open the backend project in your preferred C# IDE (e.g., Visual Studio), and run the project to start the local server.
+   The backend is built using C# and .NET 6 Minimal API. Open the backend project in your preferred C# IDE (e.g., Visual Studio 2022), and run the project to start the local server.
 
 3. **Start the Frontend:**
    Use VSCode or an HTTP server to simulate the frontend. Open the `index.html` file in your web browser to launch the frontend interface. Ensure you are serving the frontend files through a local server (e.g., Live Server extension in VSCode) to avoid CORS issues.
