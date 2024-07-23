@@ -122,7 +122,7 @@ The application is deployed using free hosting services for both the backend and
 
 #### Backend Deployment
 
-- **URL:** `http://www.tranzactplansapi.somee.com/`
+- **URL:** `https://www.tranzactplansapi.somee.com/`
 - **Hosting Service:** Somee.com
   - **Description:** Somee.com offers free ASP.NET hosting, which is ideal for deploying .NET applications. The service provides support for SQL databases, a custom domain, and a user-friendly control panel to manage the deployment. It's a good choice for small to medium-sized projects looking for a cost-effective solution for hosting their backend services.
 
