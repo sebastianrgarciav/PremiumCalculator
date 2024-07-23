@@ -90,7 +90,7 @@ fetch('http://localhost:7014/GetPremium', {
     body: JSON.stringify({
         dateOfBirth: '1990-01-01',
         state: 'NY',
-        age: 30,
+        age: 34,
         plan: 'A'
     })
 })
@@ -196,7 +196,7 @@ Below is an example of how to write unit tests for the backend API methods using
          {
              State = "",
              Plan = "",
-             Age = 35,
+             Age = 39,
              DateOfBirth = DateTime.Now
          };
 
@@ -222,7 +222,7 @@ Below is an example of how to write unit tests for the backend API methods using
          {
              State = "CA",
              Plan = "A",
-             Age = 35,
+             Age = 39,
              DateOfBirth = new DateTime(1985, 1, 1)
          };
 
@@ -250,7 +250,7 @@ Below is an example of how to write unit tests for the backend API methods using
          {
              State = "NY",
              Plan = "B",
-             Age = 35,
+             Age = 39,
              DateOfBirth = new DateTime(1985, 1, 1)
          };
 
