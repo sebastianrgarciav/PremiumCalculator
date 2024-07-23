@@ -252,11 +252,7 @@ Below is an example of how to write unit tests for the backend API methods using
          Assert.Equal("No matching plans found", result);
      }
      ```
-
-### Frontend Testing
-
-Use JavaScript testing frameworks like Jest or Mocha for testing frontend functionalities.
-
+     
 ### Manual Testing
 
 - Verify that the premium calculation works correctly based on the input values.
