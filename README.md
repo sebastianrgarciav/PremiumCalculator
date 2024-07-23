@@ -22,6 +22,7 @@ To set up the project on your local machine for development and testing purposes
 
 3. **Start the Frontend:**
    Use VSCode or an HTTP server to simulate the frontend. Open the `index.html` file in your web browser to launch the frontend interface. Ensure you are serving the frontend files through a local server (e.g., Live Server extension in VSCode) to avoid CORS issues.
+   ![liveServer](https://github.com/user-attachments/assets/7b206b74-6c91-4346-a2a0-db6f02e5d2f6)
 
 ## Usage
 
@@ -46,6 +47,8 @@ To use the Premium Calculator, follow these steps:
 3. **Edit Plans:**
    - Click the "Edit Plans" button to view and edit existing plans.
    - You can add new plans, edit existing ones, and save changes. To save all the rows, you need to click the 'Save' button for each row individually, and then click the 'Save Changes' button to save all the changes to the backend.
+     
+  ![plansView](https://github.com/user-attachments/assets/2742535a-e4ad-4193-b67e-c5caa797ff83)
 
 ## API Documentation
 
@@ -64,7 +67,7 @@ fetch('http://localhost:7014/GetPlans')
     .then(response => response.json())
     .then(data => console.log(data));
 ```
-
+![Getplans](https://github.com/user-attachments/assets/841c1fc2-3ffd-498d-8835-19899eb49b4c)
 ### Get Premium
 
 - **Endpoint:** `http://localhost:7014/GetPremium`
@@ -90,7 +93,7 @@ fetch('http://localhost:7014/GetPremium', {
 .then(response => response.json())
 .then(data => console.log(data));
 ```
-
+![GetPremium](https://github.com/user-attachments/assets/4667bc41-482d-4588-a070-17074dfa13c7)
 ### Update Plans
 
 - **Endpoint:** `http://localhost:7014/UpdatePlans`
@@ -110,8 +113,9 @@ fetch('http://localhost:7014/UpdatePlans', {
 })
 .then(response => response.json())
 .then(data => console.log(data));
-
 ```
+![UpdatePlans](https://github.com/user-attachments/assets/74f9b0c2-c836-4da9-9050-bce34db9e8ec)
+
 ### Deploy 
 
 The application is deployed using free hosting services for both the backend and the frontend.
@@ -150,6 +154,7 @@ Ensure you have unit tests written for the backend API methods. You can use a te
 #### Example Unit Testing for the Backend
 
 Below is an example of how to write unit tests for the backend API methods using xUnit.
+![executeUnitTest](https://github.com/user-attachments/assets/20dc2cc6-2977-4f34-af3c-ed1d2652abab)
 
 #### Unit Tests for `PlansController`
 
@@ -254,7 +259,9 @@ Below is an example of how to write unit tests for the backend API methods using
          Assert.Equal("No matching plans found", result);
      }
      ```
-     
+5. **Results**
+   ![unitTestCSharp](https://github.com/user-attachments/assets/2d3e32ab-897e-44b6-a69f-ca68434ed5d2)
+
 ### Manual Testing
 
 - Verify that the premium calculation works correctly based on the input values.
