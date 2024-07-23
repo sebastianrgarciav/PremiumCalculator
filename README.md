@@ -1,5 +1,5 @@
 
-# Premium Calculator Documentation
+# Tranzact Premium Calculator Documentation
 
 ## Overview
 
