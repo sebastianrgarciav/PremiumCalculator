@@ -291,8 +291,11 @@ Below is an example of how to write unit tests for the backend API methods using
    - Disable controls if value has not been retrieved. [✅]
    - Validate only numeric entries on fields. [✅]
    - Handle all exceptions when calculating values. [✅]
-
-2. **General:**
+     
+2. **Deployment:**
+   - Deployed the application using free hosting services for both backend and frontend. [✅]
+     
+3. **General:**
    - Include unit testing. [✅]
 
 
