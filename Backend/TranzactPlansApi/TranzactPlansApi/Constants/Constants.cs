@@ -13,10 +13,10 @@ namespace TranzactPlansApi
                     <li><b>GET /</b><br>Returns this introduction to the API.</li>
                     <li><b>GET /GetPlans</b><br>Returns a list of all available plans.<br><i>Example:</i> Fetch all plans by sending a GET request to /GetPlans.</li>
                     <li><b>POST /GetPremium</b><br>Calculates the premium based on the provided request details.<br><i>Request body (JSON):</i><br><pre>{
-    ""State"": ""CA"",
-    ""Plan"": ""A, B"",
+    ""State"": ""NY"",
+    ""Plan"": ""A"",
     ""DateOfBirth"": ""1985-05-10"",
-    ""Age"": 38
+    ""Age"": 39
 }</pre><i>Example:</i> Send a POST request with the above body to /GetPremium.</li>
                     <li><b>POST /UpdatePlans</b><br>Updates the list of plans with the provided list.<br><i>Request body (JSON):</i> A list of plan objects.<br><i>Example:</i> Send a POST request with the updated plans to /UpdatePlans.</li>
                 </ul>
