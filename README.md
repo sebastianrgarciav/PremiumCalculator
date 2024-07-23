@@ -5,6 +5,8 @@
 
 The Premium Calculator project is a web-based application designed to calculate insurance premiums based on user input. It allows users to enter details such as date of birth, state, age, and plan to determine the premium amount. This project is useful for quickly obtaining premium calculations and making informed decisions.
 
+![indexView](https://github.com/user-attachments/assets/4908a624-7b56-4ae3-9356-26856f596c4e)
+
 ## Setup
 
 To set up the project on your local machine for development and testing purposes, follow these steps:
