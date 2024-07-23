@@ -43,6 +43,8 @@ To use the Premium Calculator, follow these steps:
      Expected results:
      - Monthly = 100.0 (300.0 / 3)
      - Annually = 1200.0 (300.0 * 4)
+    
+   ![exampleGetPremium](https://github.com/user-attachments/assets/e45b3aec-9e7a-4b8a-9a7c-44ed385c0f45)
 
 3. **Edit Plans:**
    - Click the "Edit Plans" button to view and edit existing plans.
