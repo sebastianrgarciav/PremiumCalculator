@@ -26,6 +26,7 @@ To set up the project on your local machine for development and testing purposes
 
 4. **Start the Frontend:**
    Use VSCode or an HTTP server to simulate the frontend. Make sure that your frontend folder is located in a workspace within VSCode. Open the index.html file in your web browser to launch the frontend interface. Ensure you are serving the frontend files through a local server (e.g., Live Server extension in VSCode) to avoid CORS issues.
+   
    ![workspace](https://github.com/user-attachments/assets/f78c5ef8-679b-4a7d-9e45-9e95172273ef)
    ![liveServer](https://github.com/user-attachments/assets/7b206b74-6c91-4346-a2a0-db6f02e5d2f6)
 
